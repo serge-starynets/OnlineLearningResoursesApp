@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("app-plans",["simpleControls","ngRoute"]).config(["$routeProvider",function(e){e.when("/",{controller:"plansController",controllerAs:"vm",templateUrl:"/views/plansView.html"}),e.when("/editor/:planName",{controller:"planEditorController",controllerAs:"vm",templateUrl:"/views/planEditorView.html"}),e.otherwise({redirectTo:"/"})}])}();

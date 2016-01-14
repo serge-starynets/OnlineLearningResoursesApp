@@ -1,0 +1,16 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+@section Scripts{
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="~/lib/angular-timer/app/js/_timer.js"></script>
+    <script src="~/js/simpleControls.js"></script>
+    <script src="~/js/app-plans.js"></script>
+    <script src="~/js/plansController.js"></script>
+    <script src="~/js/planEditorController.js"></script>
+}
+<div class="row" ng-app="app-plans">
+    <div ng-view></div>
+
+</div>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Courses Page";
+}
+<h2>Collection of Online Resourses</h2>
+
+@section Scripts{
+    <script src="~/lib/underscore/underscore-min.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="~/js/simpleControls.js"></script>
+    <script src="~/js/app-courses.js"></script>
+    <script src="~/js/coursesController.js"></script>
+}
+<div class="row" ng-app="app-courses">
+    <div ng-view></div>
+
+</div>

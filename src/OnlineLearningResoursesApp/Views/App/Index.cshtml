@@ -1,0 +1,19 @@
+@model IEnumerable<OnlineLearningResoursesApp.Models.LearningPlan>
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Welcome to The Online Learning Resourses</h1>
+            <p>This app will allow you to choose among numerous online courses to build your own learning plan</p>
+        @if (User.Identity.IsAuthenticated)
+        {
+        <a asp-controller="App" asp-action="plans" class="btn btn-lg btn-success">View my Plans</a>
+        }
+        else {
+        <a asp-controller="App" asp-action="plans" class="btn btn-lg btn-success">Sign In</a>
+        <a asp-controller="Auth" asp-action="Register" class="btn btn-lg btn-default">Register</a>
+        }
+    </div>
+
+</div>

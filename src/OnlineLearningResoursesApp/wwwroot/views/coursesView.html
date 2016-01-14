@@ -1,0 +1,27 @@
+﻿<div class="col-md-12">
+    <div class="text-danger" ng-show="vm.errorMessage">{{ vm.errorMessage }}</div>
+    <wait-cursor display-when="vm.isBusy"></wait-cursor>
+    <span class="text-danger" ng-show="vm.showSuccessAlert">{{ vm.successTextAlert }}</span>
+    <table class="table table-responsive table-striped">
+        <tr>
+            <th>Course name</th>
+            <th>Duration, days</th>
+            <th>Start date</th>
+            <th>Learning Plan name</th>
+            <th>Resourse location</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="course in vm.courses" ng-controller="coursesController">
+            <td>{{ course.name }}</td>
+            <td>{{ course.duration }}</td>
+            <td>{{ course.dateOfStart | date }}</td>
+            <td>{{ course.planName }}</td>
+            <td><a href="{{ course.url }}" class="btn btn-default" target="_blank">Visit course page</a></td>
+            <td><a ng-click="vm.deleteCourse(course.id)" class="btn btn-sm btn-danger">Delete course</a></td>
+        </tr>
+        <div ng-controller="coursesController">
+            <a ng-href="#/addNewCourse" class="btn btn-sm btn-primary">Add new course</a>
+        </div>
+    </table>
+
+</div>
