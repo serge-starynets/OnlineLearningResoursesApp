@@ -85,18 +85,8 @@ namespace OnlineLearningResoursesApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public async void Configure(IApplicationBuilder app, LearningContextSeedData seeder, ILoggerFactory loggerFactory, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
                 loggerFactory.AddDebug(LogLevel.Information);
                 app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                loggerFactory.AddDebug(LogLevel.Error);
-                app.UseDeveloperExceptionPage();
-            }
-
-
 
             app.UseStaticFiles();
 
