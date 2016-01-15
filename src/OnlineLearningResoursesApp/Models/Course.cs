@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OnlineLearningResoursesApp.Models
+namespace OnlineLearningResourcesApp.Models
 {
     public class Course
     {

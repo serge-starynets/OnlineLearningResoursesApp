@@ -2,15 +2,15 @@
 using Microsoft.AspNet.Authorization;
 using Microsoft.AspNet.Mvc;
 using Microsoft.Extensions.Logging;
-using OnlineLearningResoursesApp.Models;
-using OnlineLearningResoursesApp.ViewModels;
+using OnlineLearningResourcesApp.Models;
+using OnlineLearningResourcesApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace OnlineLearningResoursesApp.Controllers.Api
+namespace OnlineLearningResourcesApp.Controllers.Api
 {
     [Authorize]
     //[Route("api/plans")]

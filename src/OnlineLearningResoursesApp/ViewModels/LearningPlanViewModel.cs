@@ -1,11 +1,11 @@
-﻿using OnlineLearningResoursesApp.Models;
+﻿using OnlineLearningResourcesApp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OnlineLearningResoursesApp.ViewModels
+namespace OnlineLearningResourcesApp.ViewModels
 {
     public class LearningPlanViewModel
     {

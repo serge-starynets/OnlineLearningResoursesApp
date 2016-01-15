@@ -1,11 +1,11 @@
 using System;
 using Microsoft.AspNet.Mvc;
-using OnlineLearningResoursesApp.ViewModels;
-using OnlineLearningResoursesApp.Models;
+using OnlineLearningResourcesApp.ViewModels;
+using OnlineLearningResourcesApp.Models;
 using System.Linq;
 using Microsoft.AspNet.Authorization;
 
-namespace OnlineLearningResoursesApp.Controllers.Web
+namespace OnlineLearningResourcesApp.Controllers.Web
 {
     public class AppController : Controller
     {

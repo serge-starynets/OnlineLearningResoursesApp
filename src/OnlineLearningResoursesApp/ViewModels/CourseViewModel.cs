@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OnlineLearningResoursesApp.Controllers.Api
+namespace OnlineLearningResourcesApp.Controllers.Api
 {
     public class CourseViewModel
     {

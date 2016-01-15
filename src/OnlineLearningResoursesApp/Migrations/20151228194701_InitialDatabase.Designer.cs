@@ -3,9 +3,9 @@ using Microsoft.Data.Entity;
 using Microsoft.Data.Entity.Infrastructure;
 using Microsoft.Data.Entity.Metadata;
 using Microsoft.Data.Entity.Migrations;
-using OnlineLearningResoursesApp.Models;
+using OnlineLearningResourcesApp.Models;
 
-namespace OnlineLearningResoursesApp.Migrations
+namespace OnlineLearningResourcesApp.Migrations
 {
     [DbContext(typeof(LearningContext))]
     [Migration("20151228194701_InitialDatabase")]

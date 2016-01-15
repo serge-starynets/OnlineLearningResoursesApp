@@ -3,13 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using OnlineLearningResoursesApp.Models;
+using OnlineLearningResourcesApp.Models;
 using Microsoft.Extensions.Logging;
 using System.Net;
 using AutoMapper;
 using Microsoft.AspNet.Authorization;
 
-namespace OnlineLearningResoursesApp.Controllers.Api
+namespace OnlineLearningResourcesApp.Controllers.Api
 {
     [Authorize]    
     public class CourseController : Controller

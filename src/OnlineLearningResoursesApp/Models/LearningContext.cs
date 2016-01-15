@@ -2,7 +2,7 @@ using System;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
 
-namespace OnlineLearningResoursesApp.Models
+namespace OnlineLearningResourcesApp.Models
 {
     public class LearningContext : IdentityDbContext<User>
     {

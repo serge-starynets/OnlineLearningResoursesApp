@@ -8,18 +8,18 @@ using Microsoft.AspNet.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.PlatformAbstractions;
-using OnlineLearningResoursesApp.Models;
+using OnlineLearningResourcesApp.Models;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
-using OnlineLearningResoursesApp.ViewModels;
-using OnlineLearningResoursesApp.Controllers.Api;
+using OnlineLearningResourcesApp.ViewModels;
+using OnlineLearningResourcesApp.Controllers.Api;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Mvc;
 using Microsoft.AspNet.Authentication.Cookies;
 using System.Net;
 using AutoMapper;
 
-namespace OnlineLearningResoursesApp
+namespace OnlineLearningResourcesApp
 {
     public class Startup
     {

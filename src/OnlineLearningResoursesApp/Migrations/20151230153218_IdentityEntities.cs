@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Data.Entity.Migrations;
 using Microsoft.Data.Entity.Metadata;
 
-namespace OnlineLearningResoursesApp.Migrations
+namespace OnlineLearningResourcesApp.Migrations
 {
     public partial class IdentityEntities : Migration
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace OnlineLearningResoursesApp.ViewModels
+namespace OnlineLearningResourcesApp.ViewModels
 {
     public class RegisterViewModel
     {

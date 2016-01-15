@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OnlineLearningResoursesApp.Models
+namespace OnlineLearningResourcesApp.Models
 {
     public class LearningRepository : ILearningRepository
     {
