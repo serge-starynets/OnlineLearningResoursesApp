@@ -13,7 +13,6 @@ using System.Threading.Tasks;
 namespace OnlineLearningResourcesApp.Controllers.Api
 {
     [Authorize]
-    //[Route("api/plans")]
     public class LearningPlanController : Controller
     {
         private ILogger _logger;
@@ -25,7 +24,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             _logger = logger;
         }
 
-        // gets plans of user
+        // Gets plans of user
         [HttpGet("api/plans")]
         public JsonResult Get()
         {
@@ -34,7 +33,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             return Json(results);
         }
 
-        // posts new plan for user
+        // Posts new plan for user
         [HttpPost("api/plans")]
         public JsonResult Post([FromBody]LearningPlanViewModel vm)
         {
@@ -65,7 +64,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             return Json(new { Message = "Failed", ModelState = ModelState });
         }
 
-       // remove course from plan
+       // Remove course from plan
         [HttpPut]
         [Route("api/plans/{planName}/courses/{id}")]
         public JsonResult RemoveCourseFromPlan(string planName, int id)
@@ -108,6 +107,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
 
         //}
 
+        // Delete plan
         [HttpDelete]
         [Route("api/plans/{id}")]
         public JsonResult Delete(int id)

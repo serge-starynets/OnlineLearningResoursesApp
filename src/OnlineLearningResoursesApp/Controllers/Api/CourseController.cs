@@ -23,7 +23,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             _logger = logger;
         }
 
-        // get courses of specific plan
+        // Get courses of specific plan
         [HttpGet]
         [Route("api/plans/{planName}/courses")]
         public JsonResult Get(string planName)
@@ -46,7 +46,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             }
         }
 
-        // gets all courses
+        // Gets all courses
         [HttpGet]
         [Route("api/courses")]
         public JsonResult Get()
@@ -70,7 +70,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             }
         }
 
-        // add new course to the specific plan
+        // Add new course to the specific plan
         [HttpPost]
         [Route("api/plans/{planName}/courses")]
         public JsonResult Post(string planName, [FromBody]Course vm)
@@ -103,7 +103,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             return Json("Validation failed on new course");
         }
 
-        // create new course 
+        // Create new course 
         [HttpPost]
         [Route("api/courses")]
         public JsonResult Post([FromBody]CourseViewModel vm)
@@ -136,6 +136,7 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             return Json("Validation failed on new course");
         }
 
+        // Make course active
         [HttpPut]
         [Route("api/courses/{id}")]
         public JsonResult MakeCourseActive(int id)
