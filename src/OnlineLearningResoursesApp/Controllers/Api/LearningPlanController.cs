@@ -86,27 +86,6 @@ namespace OnlineLearningResourcesApp.Controllers.Api
             return Json("Failed to remove course. Cannot find course");
         }
 
-        //[HttpPut]
-        //[Route("api/plans/{planName}/courses/{id}")]
-        //public JsonResult MakeCourseActive(int id)
-        //{
-        //    try
-        //    {
-
-        //            _repository.UpdateCourseToActive(id);
-
-        //                Response.StatusCode = (int)HttpStatusCode.Accepted;
-        //                return Json("course started"); 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.LogError("Failed to start course", ex);
-        //        Response.StatusCode = (int)HttpStatusCode.BadRequest;
-        //        return Json("Failed to start course");
-        //    }
-
-        //}
-
         // Delete plan
         [HttpDelete]
         [Route("api/plans/{id}")]

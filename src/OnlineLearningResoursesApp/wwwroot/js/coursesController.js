@@ -23,10 +23,6 @@
             // Success
             angular.copy(response.data, vm.courses);
             vm.isBusy = false;
-            //if ($route.reload) {
-            //    vm.successTextAlert = "Course has been deleted";
-            //    vm.showSuccessAlert = true;
-            //}
         }, function (error) {
             // Failure
             vm.errorMessage = "Failed to load data: " + error;

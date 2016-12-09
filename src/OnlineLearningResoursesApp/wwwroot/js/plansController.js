@@ -53,7 +53,6 @@
                 // Success
                 vm.plans.push(response.data);
                 vm.newPlan = {};
-                //$window.location.reload();
             }, function () {
                 // Failure
                 vm.errorMessage = "Failed to save new learning plan";
@@ -79,7 +78,6 @@
                             vm.errorMessage = "Failed to delete plan";
                             vm.alertTextMessage = "You should remove all courses from the " + name + " first";
                             vm.showAlertText = true;
-                           // $route.reload();
                         };
                     }, function () {
                             vm.errorMessage = "Failed to delete course";

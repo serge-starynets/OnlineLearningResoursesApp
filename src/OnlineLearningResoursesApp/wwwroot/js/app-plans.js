@@ -18,12 +18,6 @@
             templateUrl: "/views/planEditorView.html"
         });
 
-        //$routeProvider.when("/courses", {
-        //    controller: "plansController",
-        //    controllerAs: "vm",
-        //    templateUrl: "/views/coursesView.html"
-        //});
-
         $routeProvider.otherwise({ redirectTo: "/"})
     });
 

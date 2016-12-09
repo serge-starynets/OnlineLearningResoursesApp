@@ -12,12 +12,6 @@
             templateUrl: "/views/coursesView.html"
         });
 
-        //$routeProvider.when("/editor/:planName", {
-        //    controller: "planEditorController",
-        //    controllerAs: "vm",
-        //    templateUrl: "/views/planEditorView.html"
-        //});
-
         $routeProvider.when("/addNewCourse", {
             controller: "coursesController",
             controllerAs: "vm",
