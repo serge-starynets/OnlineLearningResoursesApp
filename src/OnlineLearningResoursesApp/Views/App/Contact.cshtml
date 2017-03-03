@@ -5,7 +5,10 @@
 @section Scripts{
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-
+<script>
+    // alert pop-up with timeout for testing purposes
+    function showAlert() { setTimeout(function () { alert("Message sent."); }, 2000); }
+</script>
 }
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
@@ -34,21 +37,11 @@
             </div>
             <div class="form-group">
                 <a asp-controller ="App" asp-action="Index" class="btn btn-default">Cancel</a>
-                    <button class="btn btn-primary" onclick="myFunction()">Send</button>
+                    <button class="btn btn-primary" onclick="showAlert()">Send</button>
             </div>
         </form>
     </div>
 </div>
 
 
-<script>
-    // alert pop-up with timeout for testing purposes
-    function myFunction() {
-        setTimeout(function () {
-            var inputs = document.getElementsByTagName("input");
-            var msg = document.getElementsByTagName("textarea");
-            if (inputs[0].value.length & inputs[1].value.length & msg[0].value.length > 4)
-                alert("Message sent.");
-        }, 2000);
-    }
-</script>
+
